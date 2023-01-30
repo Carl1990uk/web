@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useQuery } from "react-query";
-import AddToDo from "../components/AddToDo/AddToDo";
+import AddContact from "../components/AddContact/AddContact";
 import ContactList from "../components/ContactList/CommentList";
 
 export enum PageEnum {
@@ -49,7 +49,7 @@ export const Home = () => {
           </>
         )}
         {shownPage === PageEnum.add && (
-          <AddToDo backBtnClickHandler={showListPage} />
+          <AddContact backBtnClickHandler={showListPage} />
         )}
       </section>
     </div>

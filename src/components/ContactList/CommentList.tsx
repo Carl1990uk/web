@@ -25,7 +25,7 @@ const ContactList = (props: Props) => {
         </tr>
         {list.map((item) => {
           return (
-            <tr>
+            <tr key={item.telephone}>
               <td>{item.salutation}</td>
               <td>
                 {item.foreName} {""}
