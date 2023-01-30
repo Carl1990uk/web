@@ -42,10 +42,9 @@ export const Home = () => {
       <h1>Simple CRUD operations</h1>
 
       <section>
-        <div>content part</div>
         {shownPage === PageEnum.list && (
           <>
-            <input type="button" value="add toDO" onClick={AddToDoHandler} />
+            <input type="button" value="Add Contact" onClick={AddToDoHandler} />
             <ContactList list={data} />
           </>
         )}
