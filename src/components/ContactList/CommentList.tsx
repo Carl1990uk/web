@@ -1,6 +1,5 @@
 import React from "react";
 import Contacts from "../../pages/Home";
-
 import "./contactlist.module.scss";
 type Props = {
   list: Contacts[];
